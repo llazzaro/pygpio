@@ -16,11 +16,10 @@ requires = ['adafruit-pureio']
 if sys.platform != 'win32' and sys.platform != 'darwin':
     requires.append('spidev')
 
-setup(name              = 'Adafruit_GPIO',
+setup(name              = 'pygpio',
       version           = '1.0.3',
-      author            = 'Tony DiCola',
-      author_email      = 'tdicola@adafruit.com',
-      description       = 'Library to provide a cross-platform GPIO interface on the Raspberry Pi and Beaglebone Black using the RPi.GPIO and Adafruit_BBIO libraries.',
+      author            = 'Leonardo Lazzaro',  #  original author Tony DiCola, this was changed to maintain the project on pypi
+      author_email      = 'lazzaroleonardo@gmail.com',  # original author email tdicola@adafruit.com
       license           = 'MIT',
       url               = 'https://github.com/adafruit/Adafruit_Python_GPIO/',
       install_requires  = requires,
